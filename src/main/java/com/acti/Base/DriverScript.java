@@ -34,12 +34,12 @@ public class DriverScript {
 		
 		if (browser.equalsIgnoreCase(browser))
 		{
-			System.setProperty("wepdriver.chrome.driver", "./actiBrowsers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./actiBrowsers/chromedriver.exe");
 			driver = new ChromeDriver();				
 		}
 		else if (browser.equalsIgnoreCase("firefox"))
 		{
-			System.setProperty("wepdriver.gecko.driver", "./actiBrowsers/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "./actiBrowsers/geckodriver.exe");
 			driver = new FirefoxDriver();				
 		}
 		driver.manage().window().maximize();
